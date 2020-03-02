@@ -6,9 +6,10 @@ class Main extends React.Component {
         this.state = {
             imageURL: "",
         };
+        this.handleUploadImage = this.handleUploadImage.bind(this);
     }
 
-    handleUploadImage = (ev) => {
+    handleUploadImage(ev) {
         ev.preventDefault();
     
         const data = new FormData();
